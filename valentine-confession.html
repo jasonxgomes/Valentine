@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="valentine-confession.css">
+  <title>Valentine Confession</title>
+</head>
+
+<body>
+
+  <!-- Background music -->
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <p class="instruction">Click the heart!</p>
+
+  <div class="container">
+    <label>
+      <div class="heart">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Love_Heart_SVG.svg" />
+      </div>
+      <input id="messageState" type="checkbox" style="display:none" />
+    </label>
+
+    <!-- ✅ ALL LETTER CONTENT MUST BE INSIDE THIS -->
+    <div class="message">
+      <h1 style="font-family: Cinzel, serif; font-size: 40px; letter-spacing: 1.2px;">
+        My love
+      </h1>
+
+      <p>
+        <span>
+          &emsp; I don’t have to wonder how you feel, because your love already shows in everything you do and that means more to me than you know. Being with you feels happy, safe, and exciting all at once. You make my days brighter just by thinking you are mine, and my heart feels at home with yours.
+        </span>
+
+        <br><br>
+
+        <span>
+          &emsp; So this isn’t a question filled with uncertainty, it’s a moment I want to celebrate with you. I choose you today, on Valentine’s Day, and every day after.
+        </span>
+
+        <br><br>
+
+        <span>
+          &emsp; Thank you being my Valentine and keep sharing this love we already have.. I promise to keep choosing you, loving you deeply, and making you feel just as special as you make me feel.
+        </span>
+      </p>
+
+      <br>
+
+      <div class="sincere">
+        <p style="font-weight: bold;">With Love,</p>
+        <p> Jason Gomes </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back button lock (optional but kept) -->
+  <script>
+    history.pushState(null, null, location.href);
+    window.onpopstate = function () {
+      history.pushState(null, null, location.href);
+    };
+  </script>
+
+  <!-- Scripts -->
+  <script src="jquery.js"></script>
+  <script src="jquery2.1.js"></script>
+  <script defer src="valentine-confession.js"></script>
+ 
+  <footer class="site-footer">
+    Made with ❤️ by Jason Gomes
+  </footer>
+  
+
+</body>
+</html>
